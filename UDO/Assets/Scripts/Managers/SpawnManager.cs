@@ -39,8 +39,12 @@ public class SpawnManager : MonoBehaviour
             
 
             newBurger.transform.DOJump(jumpPos,_jumpPower,1, _jumpDuration).SetEase(Ease.OutQuad);
+            setBurger(newBurger);
             yield return new WaitForSeconds(time);
 
         }
+    }
+    private void setBurger(GameObject burger){
+        burger.AddComponent<BurgerScript>();
     }
 }
