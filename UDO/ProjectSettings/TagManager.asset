@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fence
   - Boss
+  - Cube
   layers:
   - Default
   - TransparentFX
