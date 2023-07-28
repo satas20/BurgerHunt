@@ -36,7 +36,8 @@ public class BurgerScript : MonoBehaviour
             _rigidbody.velocity = Vector3.zero;
             atack(_damage);  
         }
-        if (!fence.activeInHierarchy) { isAtacking = false; }
+        if (fence == null) { isAtacking = false; }
+        else if (!fence.activeInHierarchy) { isAtacking = false; }
         timer -= Time.deltaTime;
     }
     private void Move(){
