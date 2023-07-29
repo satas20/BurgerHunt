@@ -10,6 +10,8 @@ public class Stacking : MonoBehaviour
     List<GameObject> _cubeList = new List<GameObject>();
     private int _cubeListIndexCounter = 0;
 
+    private float coinValue = 10f;
+
     private void addBurger(GameObject burger){
         _cubeList.Add(burger);
         if (_cubeList.Count == 1)
@@ -33,7 +35,8 @@ public class Stacking : MonoBehaviour
         if (other.CompareTag("Food"))
         {
             addBurger(other.gameObject);
-            AudioManager.Instance.PlaySFX("Burger");            
+            AudioManager.Instance.PlaySFX("Burger");
+            GameManager.Instance.AddCountCoins(coinValue);
         }
     }
 }
