@@ -7,6 +7,7 @@ using DG.Tweening;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject _burgerPrefab;
+    [SerializeField] private GameObject _coinPrefab;
 
     [Space(50)]
     [SerializeField] private float _spawnRate;
@@ -26,7 +27,7 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
     public IEnumerator Spawn(float time){
         while (isSpawn)
@@ -46,5 +47,18 @@ public class SpawnManager : MonoBehaviour
     }
     private void setBurger(GameObject burger){
         burger.AddComponent<BurgerScript>();
+    }
+     public void spawnGold(int amount) {
+        for(int i = 0; i < amount; i++){
+            Debug.Log("spawned");
+            Vector3 spawnPos = new Vector3(Random.Range(-100f, 100f), 0, Random.Range(-100f, 100f)).normalized * 2;
+            GameObject newCoin = Instantiate(_coinPrefab, spawnPos, Quaternion.identity);
+            Vector3 jumpPos = transform.position + (spawnPos - transform.position).normalized * (3 + Random.Range(-1f, 1f));
+            jumpPos.y += 1;
+
+
+            newCoin.transform.DOJump(jumpPos, 4, 1, _jumpDuration).SetEase(Ease.OutQuad);
+            
+        }
     }
 }

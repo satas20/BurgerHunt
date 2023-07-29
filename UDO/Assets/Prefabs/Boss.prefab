@@ -206,6 +206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _burgerPrefab: {fileID: 243272002157419812, guid: 2e24767dd0669f04bb9767f0bcb08b44,
     type: 3}
+  _coinPrefab: {fileID: 8806050351399528750, guid: 167f220944e67eb45b731514b8669d86,
+    type: 3}
   _spawnRate: 1
   _jumpLength: 2.99
   _jumpPower: 2

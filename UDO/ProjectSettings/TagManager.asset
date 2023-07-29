@@ -9,6 +9,7 @@ TagManager:
   - Cube
   - FenceRepair
   - Food
+  - Gold
   layers:
   - Default
   - TransparentFX

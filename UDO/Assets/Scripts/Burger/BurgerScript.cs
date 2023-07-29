@@ -66,6 +66,21 @@ public class BurgerScript : MonoBehaviour
             isAtacking = false;
         }
     }
-    
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Fence"))
+        {
+            isAtacking = true;
+            fence = collision.gameObject;
+        }
+    }
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Fence"))
+        {
+            isAtacking = false;
+        }
+    }
+
 }
 
