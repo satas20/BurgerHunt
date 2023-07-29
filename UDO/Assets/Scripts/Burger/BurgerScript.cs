@@ -13,12 +13,13 @@ public class BurgerScript : MonoBehaviour
     private Rigidbody _rigidbody;
     private bool isAtacking =false;
 
+    private Animator _animtor;
     private GameObject fence;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
         GameObject boss =GameObject.FindGameObjectWithTag("Boss");
-      
+        _animtor = gameObject.GetComponent<Animator>();
         walkDir = (boss.transform.position - transform.position).normalized * -1;
         
     }
@@ -61,6 +62,7 @@ public class BurgerScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Fence")){
             isAtacking = true;
             fence = collision.gameObject;
+            _animtor.SetBool("isAtacking", true);
         }
     }
     private void OnCollisionExit(Collision collision)
@@ -68,6 +70,7 @@ public class BurgerScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Fence"))
         {
             isAtacking = false;
+            _animtor.SetBool("isAtacking", false);
         }
     }
     private void OnTriggerEnter(Collider collision)

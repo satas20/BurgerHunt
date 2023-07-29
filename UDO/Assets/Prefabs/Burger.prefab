@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7544684968414901270}
   - component: {fileID: 3109133356318100859}
   - component: {fileID: -995858925821231803}
+  - component: {fileID: 3375179859583768233}
   m_Layer: 0
   m_Name: Burger
   m_TagString: Food
@@ -31,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.76, y: 0.9, z: -0.83}
-  m_LocalScale: {x: 0.85, y: 0.425, z: 0.85}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 0.425, z: 0.85}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5692296384620275551}
   m_Father: {fileID: 0}
@@ -150,6 +151,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followSpeed: 30
+--- !u!95 &3375179859583768233
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243272002157419812}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50152d07b669991488b28a0414243db2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &5293312972305023156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,12 +193,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c3df51d172e5217448e413c5e8695d74,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 525
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3df51d172e5217448e413c5e8695d74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3df51d172e5217448e413c5e8695d74,
         type: 3}
@@ -226,7 +248,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c3df51d172e5217448e413c5e8695d74,
         type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c3df51d172e5217448e413c5e8695d74,
         type: 3}
