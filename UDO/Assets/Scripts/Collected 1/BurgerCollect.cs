@@ -9,7 +9,7 @@ public class BurgerCollect : MonoBehaviour
 
     public Transform ItemHolderTrasnform;
 
-    int NumOfItemsHolding = 0;
+    public int NumOfItemsHolding = 0;
     void Start()
     {
         

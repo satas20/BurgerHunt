@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 1584978368848922120}
   - component: {fileID: 3652715832282217017}
   - component: {fileID: 1126080108571414666}
-  - component: {fileID: 2601334743046159392}
   - component: {fileID: 2713811646374278386}
   m_Layer: 0
   m_Name: Player
@@ -202,6 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: 0
+  collectPoint: {fileID: 4020854036878675998}
 --- !u!114 &1126080108571414666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,18 +217,6 @@ MonoBehaviour:
   isRepairing: 0
   fence: {fileID: 3626047660437659905, guid: 5038286fb08ddd947b29de2e4642f6c6, type: 3}
   repairAmount: 5
---- !u!114 &2601334743046159392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2421714139059117724}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f2b06ade8bda64f9ef6c0c3bb93e66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2713811646374278386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemHolderTrasnform: {fileID: 4020854036878675998}
+  NumOfItemsHolding: 0
 --- !u!1 &2846835976291887801
 GameObject:
   m_ObjectHideFlags: 0

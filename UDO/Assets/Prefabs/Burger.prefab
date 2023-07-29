@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4471167718193378900}
   - component: {fileID: 7544684968414901270}
   - component: {fileID: 3109133356318100859}
-  - component: {fileID: -995858925821231803}
   - component: {fileID: 3375179859583768233}
+  - component: {fileID: 7502179117734890480}
   m_Layer: 0
   m_Name: Burger
   m_TagString: Food
@@ -138,19 +138,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &-995858925821231803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243272002157419812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c02ee3b24ca1e8f418751efb3adca837, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followSpeed: 30
 --- !u!95 &3375179859583768233
 Animator:
   serializedVersion: 5
@@ -172,6 +159,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7502179117734890480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243272002157419812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf3e2e0972db5f4baa5522add6eb22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5293312972305023156
 PrefabInstance:
   m_ObjectHideFlags: 0
