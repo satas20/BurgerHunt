@@ -24,7 +24,10 @@ public class PlayerManager : MonoBehaviour
     private void updateAniamtion(){
         _animator.SetFloat("Speed",_rb.velocity.magnitude);
     }
-    
+    private void Rotate(Vector3 rotation)
+    {
+        transform.rotation = Quaternion.LookRotation(rotation, Vector3.up);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("FenceRepair")){

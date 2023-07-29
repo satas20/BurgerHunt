@@ -29,6 +29,7 @@ public class BurgerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Rotate();
         if (!isAtacking) {
             Move();
         }
@@ -50,7 +51,10 @@ public class BurgerScript : MonoBehaviour
         fencescript.takeDamage(damage);
         timer = _atackCD;
     }
-
+    private void Rotate()
+    {
+        transform.rotation = Quaternion.LookRotation(walkDir, Vector3.up);
+    }
 
     private void OnCollisionStay(Collision collision)
     {
