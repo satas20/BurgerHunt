@@ -10,6 +10,7 @@ TagManager:
   - FenceRepair
   - Food
   - Gold
+  - Collect
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Collect
   - 
   - 
   - 
