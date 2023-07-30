@@ -11,6 +11,8 @@ TagManager:
   - Food
   - Gold
   - Collect
+  - BossSell
+  - Coin
   layers:
   - Default
   - TransparentFX

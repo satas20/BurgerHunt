@@ -40,20 +40,33 @@ public class PlayerManager : MonoBehaviour
     }
 
     private void sellBurger(GameObject burger){
+
+
         spawnmngr.spawnGold(1);
         burger.transform.parent=null;
         var boss = GameObject.FindGameObjectWithTag("Boss");
         burger.transform.DOJump(boss.transform.position, 6, 1, 0.5f).SetEase(Ease.OutQuad);
     }
-    private void Rotate(Vector3 rotation)
-    {
-        transform.rotation = Quaternion.LookRotation(rotation, Vector3.up);
-    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("FenceRepair")){
             _repairManager.fence = other.transform.parent.gameObject ;
             _repairManager.isRepairing = true;
+
+        }
+        if (other.gameObject.CompareTag("BossSell")){
+            for (int i = 0; i < collectPoint.childCount; i++)
+            {
+                Debug.Log(collectPoint.childCount);
+
+                sellBurger(collectPoint.GetChild(collectPoint.childCount - 1).gameObject);
+                burgercollect.NumOfItemsHolding--;
+            }
+        }
+        if (other.CompareTag("Coin")){
+            Destroy(other.gameObject);
+            coin++;
 
         }
     }

@@ -8,7 +8,7 @@ public class FenceScript : MonoBehaviour
     [SerializeField] GameObject fence;
 
     [SerializeField] private float maxHealth;
-    private float currentHealth;
+     public float currentHealth;
      [SerializeField] private Slider slider;
     [SerializeField] private GameObject bar;
     [SerializeField] private  Image fill;
@@ -40,7 +40,6 @@ public class FenceScript : MonoBehaviour
     public void heal(float amount){
         if (currentHealth < maxHealth) { currentHealth += amount; }
         SetHealth();
-        Debug.Log("healing");
         if (currentHealth > 0 ){
             fence.SetActive(true);
         }

@@ -22,7 +22,7 @@ public class RepairManager : MonoBehaviour
         while (true)
         {
 
-            if (isRepairing&&fence!=null)
+            if (isRepairing&&fence!=null && fence.GetComponent<FenceScript>().currentHealth<10)
             {
                 if (_playerManager.coin > 1){
                     fence.GetComponent<FenceScript>().heal(amount);
