@@ -20,10 +20,12 @@ public class BossManager : MonoBehaviour
 
     private void Update()
     {
+       
         if (currentTime > 0)
         {
             currentTime -= Time.deltaTime;
-            slider.value = currentTime;
+            slider.value = (float)currentTime;
+            Debug.Log(currentTime);
         }
 
         if (currentTime < 0)
@@ -31,6 +33,7 @@ public class BossManager : MonoBehaviour
             Debug.Log("Game Over");
             LossPanel.SetActive(true);
             Time.timeScale = 0;
+
         }
     }
 }

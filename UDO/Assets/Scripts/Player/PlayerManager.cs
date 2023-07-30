@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
         var boss = GameObject.FindGameObjectWithTag("Boss");
         var _bossMngr = boss.GetComponent<BossManager>();
         //boss.transform.DOScale(1.5f, 0.2f);
-        _bossMngr.currentTime += 3;
+        _bossMngr.currentTime += 3f;
         if(_bossMngr.currentTime>_bossMngr.countdownTime) { _bossMngr.currentTime = _bossMngr.countdownTime; }
         burger.transform.DOJump(boss.transform.position, 3, 1, 0.5f).SetEase(Ease.OutQuad);
     }
@@ -63,7 +63,6 @@ public class PlayerManager : MonoBehaviour
         if (other.gameObject.CompareTag("BossSell")){
             for (int i = 0; i < collectPoint.childCount; i++)
             {
-                Debug.Log(collectPoint.childCount);
                 var burger = collectPoint.GetChild(collectPoint.childCount - 1).gameObject;
                 sellBurger(collectPoint.GetChild(collectPoint.childCount - 1).gameObject);
                 burgercollect.NumOfItemsHolding--;

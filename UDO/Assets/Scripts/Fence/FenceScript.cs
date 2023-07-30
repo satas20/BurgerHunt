@@ -10,6 +10,8 @@ public class FenceScript : MonoBehaviour
     [SerializeField] private float maxHealth;
      public float currentHealth;
      [SerializeField] private Slider slider;
+    [SerializeField] GameObject repairArea;
+
     [SerializeField] private GameObject bar;
     [SerializeField] private  Image fill;
     [SerializeField] private Gradient gradient;
@@ -23,8 +25,12 @@ public class FenceScript : MonoBehaviour
     }
     private void Update()
     {
-        if (currentHealth >= maxHealth || currentHealth < 0) { bar.SetActive(false); }
-        else { bar.SetActive(true); }
+        if (currentHealth >= maxHealth || currentHealth < 0) { bar.SetActive(false);
+            repairArea.SetActive(false);
+        }
+        else { bar.SetActive(true);
+            repairArea.SetActive(true);
+        }
     }
 
     public void takeDamage(float damage){
