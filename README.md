@@ -1,7 +1,7 @@
 # Burger Hunt
-This project is made for UDO Games Next Gen Developers Internship Program. After 3 weeks of training,  we crated a game in 4 days working as a groups.
-We decided to make an Arcade Idle Hypercasual game. You can acces our GDD [by this link](https://closed-centipede-fae.notion.site/Burger-Hunting-38b74de12102416d9bc765ac1b123e16?pvs=4).
-We used trello for organizeing the project [our trello page](https://trello.com/b/KrJdfYPU/burgerhunt) . 
+This project is made for UDO Games Next Gen Developers Internship Program. After 3 weeks of training,  we created a game in 4 days working as a group.
+We decided to make an Arcade Idle Hypercasual game. You can access our GDD [by this link](https://closed-centipede-fae.notion.site/Burger-Hunting-38b74de12102416d9bc765ac1b123e16?pvs=4).
+We used Trello for organizing the project [our Trello page](https://trello.com/b/KrJdfYPU/burgerhunt). 
 
 # Team
 -  [Ata Ayyıldız](https://github.com/satas20)
