@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class FenceScript : MonoBehaviour
 {
     [SerializeField] GameObject fence;
@@ -28,6 +28,7 @@ public class FenceScript : MonoBehaviour
     }
 
     public void takeDamage(float damage){
+        transform.DOShakeRotation(0.3f,10,15);
         currentHealth -= damage;
         if (currentHealth < 0){
             broke();

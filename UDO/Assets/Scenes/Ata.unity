@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -982,15 +982,15 @@ RectTransform:
   m_GameObject: {fileID: 431782858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 864423912}
   m_Father: {fileID: 1212400763}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 122, y: -254}
+  m_AnchoredPosition: {x: 439, y: -898}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &435279253
@@ -1265,8 +1265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478579293
 MonoBehaviour:
@@ -1522,7 +1522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546839943}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.39854848, y: 3e-45, z: -1e-45, w: 0.9171473}
+  m_LocalRotation: {x: 0.39854848, y: -1e-45, z: 1e-45, w: 0.9171473}
   m_LocalPosition: {x: 0, y: 16.065, z: -19.369999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2108,8 +2108,8 @@ RectTransform:
   m_GameObject: {fileID: 757615955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 478579292}
   - {fileID: 1166642042}
@@ -2118,7 +2118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -30}
+  m_AnchoredPosition: {x: 0, y: -192}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &757615957
@@ -2168,7 +2168,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2236,7 +2236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766407118}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.39854848, y: 3e-45, z: -1e-45, w: 0.9171473}
+  m_LocalRotation: {x: 0.39854848, y: -1e-45, z: 1e-45, w: 0.9171473}
   m_LocalPosition: {x: 0, y: 16.065, z: -19.369999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3064,8 +3064,8 @@ RectTransform:
   m_GameObject: {fileID: 1140701400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 322769569}
   - {fileID: 1020049663}
@@ -3074,7 +3074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -122, y: -254}
+  m_AnchoredPosition: {x: -486, y: -933}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &1166642041
@@ -4385,9 +4385,19 @@ PrefabInstance:
       objectReference: {fileID: 167778007}
     - target: {fileID: 43157504873173785, guid: f201ffa7cee02004aae9af09d93dc946,
         type: 3}
+      propertyPath: countdownTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 43157504873173785, guid: f201ffa7cee02004aae9af09d93dc946,
+        type: 3}
       propertyPath: playerManager
       value: 
       objectReference: {fileID: 4793226315132900826}
+    - target: {fileID: 327168171741545314, guid: f201ffa7cee02004aae9af09d93dc946,
+        type: 3}
+      propertyPath: _spawnRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3221884756527509929, guid: f201ffa7cee02004aae9af09d93dc946,
         type: 3}
       propertyPath: m_LocalPosition.x
