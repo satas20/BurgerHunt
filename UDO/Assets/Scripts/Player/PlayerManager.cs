@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
         var boss = GameObject.FindGameObjectWithTag("Boss");
         var _bossMngr = boss.GetComponent<BossManager>();
         //boss.transform.DOScale(1.5f, 0.2f);
-        _bossMngr.currentTime += 3f;
+        _bossMngr.currentTime += 2f;
         if(_bossMngr.currentTime>_bossMngr.countdownTime) { _bossMngr.currentTime = _bossMngr.countdownTime; }
         burger.transform.DOJump(boss.transform.position, 3, 1, 0.5f).SetEase(Ease.OutQuad);
     }

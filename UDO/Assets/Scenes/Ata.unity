@@ -186,6 +186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'AudioManager '
       objectReference: {fileID: 0}
+    - target: {fileID: 3642587445661379455, guid: 974e44fa9b72a8e48a8eb529234c3faa,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.481
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1724,7 +1729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546839943}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.39854848, y: -1e-45, z: 1e-45, w: 0.9171473}
+  m_LocalRotation: {x: 0.39854848, y: 3e-45, z: -1e-45, w: 0.9171473}
   m_LocalPosition: {x: 0, y: 16.065, z: -19.369999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2478,7 +2483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766407118}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.39854848, y: -1e-45, z: 1e-45, w: 0.9171473}
+  m_LocalRotation: {x: 0.39854848, y: 3e-45, z: -1e-45, w: 0.9171473}
   m_LocalPosition: {x: 0, y: 16.065, z: -19.369999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3600,7 +3605,6 @@ Transform:
   m_Children:
   - {fileID: 738667490}
   - {fileID: 1958252345}
-  - {fileID: 1135134192}
   - {fileID: 1028368792}
   - {fileID: 1475356827}
   m_Father: {fileID: 0}
@@ -3636,7 +3640,7 @@ Transform:
   m_Children:
   - {fileID: 51073577}
   - {fileID: 628760254}
-  m_Father: {fileID: 1126320986}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140701400
 GameObject:
@@ -6101,7 +6105,7 @@ PrefabInstance:
     - target: {fileID: 327168171741545314, guid: f201ffa7cee02004aae9af09d93dc946,
         type: 3}
       propertyPath: _spawnRate
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 3221884756527509929, guid: f201ffa7cee02004aae9af09d93dc946,
         type: 3}
@@ -6273,3 +6277,4 @@ SceneRoots:
   - {fileID: 116088981}
   - {fileID: 1212400763}
   - {fileID: 1126320986}
+  - {fileID: 1135134192}

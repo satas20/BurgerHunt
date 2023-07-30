@@ -29,6 +29,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         Rotate();
+        //_spawnRate -= (Time.deltaTime)/30 ;
     }
     private void Rotate()
     {

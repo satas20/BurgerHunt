@@ -25,8 +25,11 @@ public class FenceScript : MonoBehaviour
     }
     private void Update()
     {
-        if (currentHealth >= maxHealth || currentHealth < 0) { bar.SetActive(false);
+        if(currentHealth >= maxHealth){
             repairArea.SetActive(false);
+        }
+            if (currentHealth >= maxHealth || currentHealth < 0) { bar.SetActive(false);
+            
         }
         else { bar.SetActive(true);
             repairArea.SetActive(true);

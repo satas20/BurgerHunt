@@ -18,22 +18,24 @@ public class BossManager : MonoBehaviour
         slider.value = currentTime;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-       
-        if (currentTime > 0)
+        if (slider.value > 00)
         {
-            currentTime -= Time.deltaTime;
+            currentTime -= Time.fixedDeltaTime;
             slider.value = (float)currentTime;
+
+        }
+
+        else if (slider.value == 0)
+        {
+            slider.value = (float)currentTime;
+            Debug.Log("Game Over");
+            LossPanel.SetActive(true);
+            slider.value = 0;
+            Time.timeScale = 0;
             Debug.Log(currentTime);
         }
 
-        if (currentTime < 0)
-        {
-            Debug.Log("Game Over");
-            LossPanel.SetActive(true);
-            Time.timeScale = 0;
-
-        }
     }
 }
