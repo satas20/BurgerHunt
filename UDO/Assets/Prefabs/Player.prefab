@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 3652715832282217017}
   - component: {fileID: 1126080108571414666}
   - component: {fileID: 2713811646374278386}
+  - component: {fileID: 3095846917395069705}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -200,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850e3b1d4d0ff40448e613eac5efd99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: 0
+  coin: 10
   collectPoint: {fileID: 4020854036878675998}
 --- !u!114 &1126080108571414666
 MonoBehaviour:
@@ -231,6 +232,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemHolderTrasnform: {fileID: 4020854036878675998}
   NumOfItemsHolding: 0
+--- !u!114 &3095846917395069705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2421714139059117724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b455535ee9cfc4e809a4d2b0efd4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
+  countdownTime: 30
+  currentTime: 0
+  LossPanel: {fileID: 0}
+  WinPanel: {fileID: 0}
+  playerManager: {fileID: 3652715832282217017}
 --- !u!1 &2846835976291887801
 GameObject:
   m_ObjectHideFlags: 0

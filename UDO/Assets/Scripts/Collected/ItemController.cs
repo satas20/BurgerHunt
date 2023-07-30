@@ -42,7 +42,7 @@ public class ItemController : MonoBehaviour
             _animator.SetBool("is›dle", true);
             GetComponent<CapsuleCollider>().isTrigger = true;
             Destroy(GetComponent<Rigidbody>());
-            
+            AudioManager.Instance.PlaySFX("Burger");
             //GetComponent<Rigidbody>().freezeRotation=true;
             //GetComponent<Rigidbody>().velocity = Vector3.zero;
             Destroy(GetComponent<BurgerScript>());

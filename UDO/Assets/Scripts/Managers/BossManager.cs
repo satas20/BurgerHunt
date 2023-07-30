@@ -7,7 +7,7 @@ public class BossManager : MonoBehaviour
 {
     public Slider slider;
     public float countdownTime;
-    private float currentTime;
+    public float currentTime;
     [SerializeField] GameObject LossPanel;
     [SerializeField] GameObject WinPanel;
 
@@ -18,19 +18,24 @@ public class BossManager : MonoBehaviour
         slider.value = currentTime;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (currentTime > 0)
+        if (slider.value > 00)
         {
-            currentTime -= Time.deltaTime;
-            slider.value = currentTime;
+            currentTime -= Time.fixedDeltaTime;
+            slider.value = (float)currentTime;
+
         }
 
-        if (currentTime < 0)
+        else if (slider.value == 0)
         {
+            slider.value = (float)currentTime;
             Debug.Log("Game Over");
             LossPanel.SetActive(true);
+            slider.value = 0;
             Time.timeScale = 0;
+            Debug.Log(currentTime);
         }
+
     }
 }
