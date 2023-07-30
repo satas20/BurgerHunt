@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+
 public class PlayerManager : MonoBehaviour
 {
     private CharacterController _controller;
     private Rigidbody _rb;
     private Animator _animator;
     private RepairManager _repairManager;
-    public float coin=0;
+    public float coin = 1f;
     [SerializeField]private Transform collectPoint;
     private BurgerCollect burgercollect;
     private SpawnManager spawnmngr;
+
     void Start()
     {
         spawnmngr = GameObject.FindGameObjectWithTag("Boss").GetComponent<SpawnManager>();
@@ -40,8 +42,7 @@ public class PlayerManager : MonoBehaviour
     }
 
     private void sellBurger(GameObject burger){
-
-
+        AudioManager.Instance.PlaySFX("EatMonster");
         spawnmngr.spawnGold(1);
         burger.transform.parent=null;
         var boss = GameObject.FindGameObjectWithTag("Boss");
@@ -66,8 +67,8 @@ public class PlayerManager : MonoBehaviour
         }
         if (other.CompareTag("Coin")){
             Destroy(other.gameObject);
-            coin++;
-
+            GameManager.Instance.AddCountCoins(coin);
+            AudioManager.Instance.PlaySFX("Burger");
         }
     }
     private void OnTriggerExit(Collider other)
@@ -75,7 +76,6 @@ public class PlayerManager : MonoBehaviour
         if (other.gameObject.CompareTag("FenceRepair"))
         {
             _repairManager.isRepairing = false;
-
         }
     }
 }

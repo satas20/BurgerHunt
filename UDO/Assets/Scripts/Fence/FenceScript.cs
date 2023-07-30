@@ -57,7 +57,7 @@ public class FenceScript : MonoBehaviour
     }
     private void SetHealth( )
     {
-       
+        AudioManager.Instance.PlaySFX("Repair");
         slider.value = currentHealth;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
