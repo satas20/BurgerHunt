@@ -14,9 +14,9 @@ The goal is to keep the monster. The burgers are escaping from the monster and w
 ## Preview
 
 <p align="center" >
-  <img src="MobControl Clone/Assets/Media/SS1.png" width="250" >
-  <img src="MobControl Clone/Assets/Media/SS2.png" width="250" >
-  <img src="MobControl Clone/Assets/Media/SS3.png" width="250" >
+  <img src=" UDO/Media/SS1.png" width="375" >
+  <img src="MobControl /Media/SS2.png" width="375" >
+ 
 </p>
 <p align="center">
   <img src="MobControl Clone/Assets/Media/Lvl1.gif" width="375">
