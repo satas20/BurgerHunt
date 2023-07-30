@@ -456,6 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fence: {fileID: 1864277429934715425}
   maxHealth: 10
+  currentHealth: 0
   slider: {fileID: 652527025828054426}
   bar: {fileID: 3395483799656273220}
   fill: {fileID: 4460071218913109131}

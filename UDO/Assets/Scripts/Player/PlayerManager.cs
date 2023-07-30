@@ -8,8 +8,8 @@ public class PlayerManager : MonoBehaviour
     private Rigidbody _rb;
     private Animator _animator;
     private RepairManager _repairManager;
-    public float coin=0;
-    [SerializeField]private Transform collectPoint;
+    public float coin = 0;
+    [SerializeField] private Transform collectPoint;
     private BurgerCollect burgercollect;
     private SpawnManager spawnmngr;
     void Start()
@@ -25,27 +25,28 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         updateAniamtion();
-        if(Input.GetKey("a")){
-            for(int i = 0; i < collectPoint.childCount; i++){
+        if (Input.GetKey("a")) {
+            for (int i = 0; i < collectPoint.childCount; i++) {
                 Debug.Log(collectPoint.childCount);
-                
-                sellBurger(collectPoint.GetChild(collectPoint.childCount-1).gameObject);
+
+                sellBurger(collectPoint.GetChild(collectPoint.childCount - 1).gameObject);
                 burgercollect.NumOfItemsHolding--;
+                Destroy(collectPoint.GetChild(collectPoint.childCount - 1).gameObject);
             }
-            
+
         }
     }
-    private void updateAniamtion(){
-        _animator.SetFloat("Speed",_rb.velocity.magnitude);
+    private void updateAniamtion() {
+        _animator.SetFloat("Speed", _rb.velocity.magnitude);
     }
 
-    private void sellBurger(GameObject burger){
+    private void sellBurger(GameObject burger) {
 
 
         spawnmngr.spawnGold(1);
-        burger.transform.parent=null;
+        burger.transform.parent = null;
         var boss = GameObject.FindGameObjectWithTag("Boss");
-        burger.transform.DOJump(boss.transform.position, 6, 1, 0.5f).SetEase(Ease.OutQuad);
+        burger.transform.DOJump(boss.transform.position, 3, 1, 0.5f).SetEase(Ease.OutQuad);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -59,9 +60,10 @@ public class PlayerManager : MonoBehaviour
             for (int i = 0; i < collectPoint.childCount; i++)
             {
                 Debug.Log(collectPoint.childCount);
-
+                var burger = collectPoint.GetChild(collectPoint.childCount - 1).gameObject;
                 sellBurger(collectPoint.GetChild(collectPoint.childCount - 1).gameObject);
                 burgercollect.NumOfItemsHolding--;
+                Destroy(burger,1f);
             }
         }
         if (other.CompareTag("Coin")){
