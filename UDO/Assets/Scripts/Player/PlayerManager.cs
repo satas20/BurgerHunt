@@ -8,7 +8,7 @@ public class PlayerManager : MonoBehaviour
     private Rigidbody _rb;
     private Animator _animator;
     private RepairManager _repairManager;
-    public float coin = 0;
+    public float coin = 1f;
     [SerializeField] private Transform collectPoint;
     private BurgerCollect burgercollect;
     private SpawnManager spawnmngr;
@@ -64,12 +64,13 @@ public class PlayerManager : MonoBehaviour
                 sellBurger(collectPoint.GetChild(collectPoint.childCount - 1).gameObject);
                 burgercollect.NumOfItemsHolding--;
                 Destroy(burger,1f);
+                AudioManager.Instance.PlaySFX("EatMonster");
             }
         }
         if (other.CompareTag("Coin")){
             Destroy(other.gameObject);
-            coin++;
-
+            GameManager.Instance.AddCountCoins(coin);
+            AudioManager.Instance.PlaySFX("coin");
         }
     }
     private void OnTriggerExit(Collider other)

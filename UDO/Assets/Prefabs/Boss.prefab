@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 5263273973422310130}
   - component: {fileID: 327168171741545314}
   - component: {fileID: 141785886939099686}
+  - component: {fileID: 43157504873173785}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -192,8 +193,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1385588449451275530}
   - {fileID: 1691180482720756294}
@@ -291,6 +292,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &43157504873173785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7573652449080974894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b455535ee9cfc4e809a4d2b0efd4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
+  countdownTime: 20
+  currentTime: 0
+  LossPanel: {fileID: 0}
+  WinPanel: {fileID: 0}
+  playerManager: {fileID: 0}
 --- !u!1001 &5174035856684206779
 PrefabInstance:
   m_ObjectHideFlags: 0

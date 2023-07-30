@@ -38,6 +38,7 @@ public class FenceScript : MonoBehaviour
         fence.SetActive(false);
     }
     public void heal(float amount){
+        AudioManager.Instance.PlaySFX("Repair");
         if (currentHealth < maxHealth) { currentHealth += amount; }
         SetHealth();
         if (currentHealth > 0 ){

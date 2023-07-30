@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -172,7 +172,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -314,6 +314,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 0ca1dce24df58fe46a870e1990dc810b, type: 3}
   - name: Repair
     clip: {fileID: 8300000, guid: 393b171718e4bf64eb5d2a6c651b1ba4, type: 3}
+  - name: coin
+    clip: {fileID: 8300000, guid: 2e9be1db42595b44ca8c815c7908cf3e, type: 3}
   musicSource: {fileID: 3642587445661379455}
   sfxSource: {fileID: 8112776660658975476}
   sfxEatSource: {fileID: 6671139828213846345}
@@ -362,7 +364,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0
